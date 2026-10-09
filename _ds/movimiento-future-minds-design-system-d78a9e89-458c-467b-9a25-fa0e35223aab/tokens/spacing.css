@@ -1,0 +1,27 @@
+/* Espaciado. El manual define el aire del logotipo en píxeles (p.23, p.27):
+   módulo de 25px, 50px de margen de protección arriba/abajo/lateral,
+   75px de espacio en la versión horizontal. Ese módulo de 25 es la base. */
+:root{
+  --space-unit:25px;
+  --space-1:5px;
+  --space-2:10px;
+  --space-3:15px;
+  --space-4:25px;   /* módulo base del manual */
+  --space-5:35px;
+  --space-6:50px;   /* área de protección del logotipo */
+  --space-7:75px;   /* aire lateral de la versión horizontal */
+  --space-8:100px;
+  --space-9:150px;
+
+  /* Aire de protección del logotipo (§2.3) */
+  --logo-clear-space:50px;
+  --logo-clear-space-h:75px;
+  --logo-module:25px;         /* el cuadrado 25×25 px de referencia */
+  --logo-min-height:32px;
+
+  /* Layout */
+  --layout-max:1280px;
+  --layout-gutter:var(--space-6);
+  --layout-gutter-sm:var(--space-4);
+  --band-padding-y:var(--space-8);
+}

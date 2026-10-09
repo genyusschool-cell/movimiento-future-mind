@@ -1,0 +1,9 @@
+/* Movimiento Future Minds — webfonts
+   Brand book (p.30) specifies two families:
+     · DIN Alternate Bold — display / titulares / "FUTURE MINDS" del logotipo
+     · Poppins Family     — texto, UI, "Movimiento" del logotipo
+   DIN Alternate is a licensed Monotype face that ships with macOS/iOS, so it is
+   requested first by name. Where it is unavailable, Archivo (Google Fonts) is the
+   closest open substitute (same squared-grotesque DIN skeleton, similar width).
+   SUBSTITUTION FLAGGED: no DIN Alternate binary was provided. */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Archivo:wght@500;600;700;800&display=swap");

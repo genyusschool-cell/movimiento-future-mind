@@ -1,0 +1,45 @@
+/* Tipografía — Manual de marca §2.5 (p.30) */
+:root{
+  --font-display:"DIN Alternate","DIN Alternate Bold","DIN Alternate Medium","Archivo","Poppins",sans-serif; /* @kind font */
+  --font-body:"Poppins","Archivo",sans-serif; /* @kind font */
+
+  /* Pesos usados en el manual */
+  --weight-display:700; /* @kind font */ /* DIN Alternate Bold — único peso del display */
+  --weight-light:300; /* @kind font */ /* Poppins Light — párrafos largos del manual */
+  --weight-regular:400; /* @kind font */
+  --weight-medium:500; /* @kind font */
+  --weight-semibold:600; /* @kind font */
+  --weight-bold:700; /* @kind font */
+
+  /* Escala. El display siempre va en MAYÚSCULAS. */
+  --fs-display-xxl:clamp(56px,9vw,132px); /* @kind font */
+  --fs-display-xl:clamp(44px,6.5vw,88px); /* @kind font */
+  --fs-display-lg:clamp(34px,4.5vw,60px); /* @kind font */
+  --fs-display-md:28px; /* @kind font */
+  --fs-display-sm:22px; /* @kind font */
+
+  --fs-body-xl:22px; /* @kind font */
+  --fs-body-lg:18px; /* @kind font */
+  --fs-body-md:16px; /* @kind font */
+  --fs-body-sm:14px; /* @kind font */
+  --fs-body-xs:12px; /* @kind font */
+
+  --fs-eyebrow:13px; /* @kind font */ /* rótulos en mayúscula, DIN, con tracking */
+
+  /* Interlineado */
+  --lh-display:0.92; /* @kind font */ /* titulares apilados, muy cerrados */
+  --lh-display-loose:1.04; /* @kind font */
+  --lh-heading:1.15; /* @kind font */
+  --lh-body:1.55; /* @kind font */
+  --lh-body-loose:1.7; /* @kind font */
+
+  /* Tracking */
+  --ls-display:0.01em; /* @kind font */
+  --ls-eyebrow:0.18em; /* @kind font */ /* "S O M O S", "A U D I E N C I A S" del manual */
+  --ls-wide:0.32em; /* @kind font */ /* portada: "M A N U A L  D E  M A R C A" */
+  --ls-body:0em; /* @kind font */
+
+  /* Contorno blanco de titular sobre foto (miniaturas YouTube, p.37) */
+  --title-outline:2px; /* @kind font */
+  --text-stroke-white:1.5px var(--fmm-blanco); /* @kind font */
+}

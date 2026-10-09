@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Movimiento Future Minds · Nace en Asturias</title>
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/radii.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/motion.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/tokens/base.css">
+  <link rel="stylesheet" href="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+  <script src="_ds/movimiento-future-minds-design-system-d78a9e89-458c-467b-9a25-fa0e35223aab/_ds_bundle.js"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#FFFFFF;color:#2C2E35;font-family:var(--font-body)}
+    a{color:#E94B4D;text-decoration-thickness:1.5px;text-underline-offset:3px}
+    a:hover{color:#C93C3E}
+    @font-face{font-family:"Anton";src:url("assets/fonts/Anton-Regular.ttf") format("truetype");font-weight:400}
+    @font-face{font-family:"Nobel Uno";src:url("assets/fonts/NobelUno-Regular.ttf") format("truetype");font-weight:400 500}
+    @font-face{font-family:"Nobel Uno";src:url("assets/fonts/NobelUno-Bold.ttf") format("truetype");font-weight:600 700}
+    ::selection{background:#DCDD3C;color:#2C2E35}
+  </style>
+</helmet>
+
+<div style="position:relative;font-family:var(--font-body);color:var(--fmm-carbon);background:var(--fmm-blanco);overflow-x:hidden">
+
+  <!-- NAV -->
+  <nav style="position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:50;width:min(1180px,calc(100% - 32px));box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 10px 10px 24px;background:var(--fmm-blanco);border:1px solid var(--fmm-gris);border-radius:var(--radius-pill);box-shadow:0 8px 24px rgba(44,46,53,.10)">
+    <a href="#inicio" style="display:flex;line-height:0">
+      <img src="assets/logo-horizontal-carbon.png" alt="Movimiento Future Minds" style="height:30px;width:auto;display:block">
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500">
+        <a href="#afterwork" style="color:var(--fmm-carbon);text-decoration:none">AsturiasAfterWork</a>
+        <a href="#ecosistema" style="color:var(--fmm-carbon);text-decoration:none">Ecosistema</a>
+        <a href="#recorrido" style="color:var(--fmm-carbon);text-decoration:none">Recorrido</a>
+        <a href="#estar" style="color:var(--fmm-carbon);text-decoration:none">Formas de estar</a>
+      </div>
+    </sc-if>
+    <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Button" as="a" href="#contacto" size="sm" variant="primary" hint-size="120px,36px">Hablemos</x-import>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" data-screen-label="01 Portada" style="position:relative;overflow:hidden;background:var(--fmm-turquesa);color:var(--fmm-blanco);min-height:min(100vh,960px);display:flex;align-items:flex-end">
+    <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+      <img src="assets/photography/fest-hall.jpg" alt="Cientos de niños y jóvenes celebran en el Future Minds Fest" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+    </sc-if>
+    <div style="position:relative;width:100%;max-width:1280px;margin:0 auto;box-sizing:border-box;padding:180px clamp(25px,4vw,50px) clamp(50px,7vw,110px);display:flex;flex-direction:column;gap:30px">
+      <div style="max-width:980px;background:var(--fmm-rojo);padding:clamp(28px,4vw,50px);display:flex;flex-direction:column;gap:25px;box-sizing:border-box">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="100%,16px">Movimiento Future Minds</x-import>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(38px,6vw,88px);line-height:.92;text-transform:uppercase;text-wrap:balance;color:var(--fmm-blanco)">Nace en Asturias. Conecta a quien decide, al talento y al futuro de España.</h1>
+        <p style="margin:0;max-width:620px;font-size:var(--fs-body-xl);font-weight:400;line-height:1.45;text-wrap:pretty">Empresas, instituciones, líderes y centros educativos construyendo algo que dura todo el año. Tu marca puede estar en esa conversación.</p>
+        <div style="display:flex">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Button" as="a" href="#contacto" variant="inverse" hint-size="180px,52px">Hablemos</x-import>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ASTURIASAFTERWORK · PRUEBA + DETALLE -->
+  <section id="afterwork" data-screen-label="02 AsturiasAfterWork" style="scroll-margin-top:80px;background:#1d1068;color:#ffffff;font-family:'Nobel Uno',sans-serif;font-weight:500">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,140px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#c9c3ec">
+        <span>Part of the Future Minds ecosystem</span>
+        <span style="color:#ffd800">VIII Edición · 3 dic 2026 · Estás aquí</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <a href="asturias-afterwork/index.html" style="display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(56px,10vw,150px);line-height:.94;letter-spacing:.02em;text-transform:uppercase;color:#ffd800;text-decoration:none;text-wrap:balance" style-hover="opacity:.88">AsturiasAfterWork</a>
+        <div style="display:flex;align-items:center;gap:14px">
+          <span style="font-size:clamp(18px,2vw,24px);font-weight:600">Main Partner</span>
+          <img src="assets/unicaja-white.svg" alt="Unicaja" style="height:clamp(30px,3.6vw,46px);width:auto;display:block">
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1.5px solid #5b4fb0;border-bottom:1.5px solid #5b4fb0">
+        <sc-for list="{{ awProof }}" as="k" hint-placeholder-count="4">
+          <div style="padding:30px 20px 30px 0;display:flex;flex-direction:column;gap:8px">
+            <span style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(44px,5vw,72px);line-height:.95;color:#ffd800;text-transform:uppercase">{{ k.value }}</span>
+            <span style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ffffff">{{ k.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+        <img src="assets/photography/web-img2.png" alt="Sala llena en la edición 2025 de AsturiasAfterWork" style="width:100%;aspect-ratio:3/2;max-height:720px;object-fit:cover;display:block;border-radius:24px">
+      </sc-if>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:50px 75px">
+        <h2 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:.98;letter-spacing:.02em;text-transform:uppercase;color:#ffffff">El encuentro<br>empresarial<br>del año en Asturias</h2>
+        <div style="display:flex;flex-direction:column;gap:18px;font-size:18px;line-height:1.6">
+          <p style="margin:0;text-wrap:pretty">La puerta de entrada al ecosistema. Una tarde en un entorno cuidado, con networking real y presencia institucional de primer nivel. Hacienda La Llorea Golf, Gijón.</p>
+          <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+            <span style="font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#ffd800">Invitados 2026</span>
+            <span>Adrián Barbón, presidente de Asturias</span>
+            <span>Miguel Ángel Revilla, expresidente de Cantabria</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px">
+        <sc-if value="{{ hasVideo }}" hint-placeholder-val="{{ false }}">
+          <div style="position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#2a1c80">
+            <iframe src="{{ videoSrc }}" title="AsturiasAfterWork 2025" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+          </div>
+        </sc-if>
+        <sc-if value="{{ noVideo }}" hint-placeholder-val="{{ true }}">
+          <div style="aspect-ratio:16/9;border-radius:24px;border:1.5px dashed #8a7fd6;background:#2a1c80;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:20px;box-sizing:border-box">
+            <i class="ph-light ph-play-circle" style="font-size:56px;color:#ffd800"></i>
+            <span style="font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase">Vídeo AsturiasAfterWork 2025</span>
+            <span style="font-size:14px;color:#c9c3ec">Pega el enlace de YouTube en los ajustes</span>
+          </div>
+        </sc-if>
+        <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+          <img src="assets/photography/aaw-stage-unicaja.jpg" alt="Conversación en el escenario de AsturiasAfterWork 2025" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:24px">
+        </sc-if>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px">
+        <sc-for list="{{ awTiers }}" as="t" hint-placeholder-count="3">
+          <sc-if value="{{ t.sold }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#2a1c80;color:#b9b3d6;border:1.5px solid #5b4fb0;border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:12px">
+              <span style="align-self:flex-start;background:#e94b4c;color:#ffffff;border-radius:800px;padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase">{{ t.seats }}</span>
+              <span style="font-family:'Anton',sans-serif;font-weight:400;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:#e94b4c">{{ t.name }}</span>
+              <p style="margin:0;font-size:16px;line-height:1.55">{{ t.text }}</p>
+              <img src="assets/unicaja-white.svg" alt="Unicaja" style="height:22px;width:auto;display:block;align-self:flex-start;margin-top:4px">
+            </div>
+          </sc-if>
+          <sc-if value="{{ t.open }}" hint-placeholder-val="{{ true }}">
+            <div style="background:#ffffff;color:#1d1068;border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:12px">
+              <span style="align-self:flex-start;background:#ffd800;color:#1d1068;border-radius:800px;padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase">{{ t.seats }}</span>
+              <span style="font-family:'Anton',sans-serif;font-weight:400;font-size:28px;letter-spacing:.02em;text-transform:uppercase">{{ t.name }}</span>
+              <p style="margin:0;font-size:16px;line-height:1.55;color:#433a7d">{{ t.text }}</p>
+            </div>
+          </sc-if>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+        <span style="font-size:16px">Quedan pocas plazas para diciembre.</span>
+        <a href="asturias-afterwork/index.html" style="display:inline-flex;align-items:center;background:#ffd800;color:#1d1068;text-decoration:none;font-weight:700;font-size:17px;padding:16px 28px;border-radius:800px" style-active="transform:scale(0.96)">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPTO -->
+  <section id="ecosistema" data-screen-label="03 Concepto" style="scroll-margin-top:80px;position:relative;overflow:hidden;background:var(--fmm-gris)">
+    <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Watermark" color="rojo" anchor="bottom-right" size="40%" rotate="-18" style="right:-8%;bottom:-25%;max-width:560px" hint-size="0px,0px"></x-import>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+      <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="100%,16px">El concepto</x-import>
+      <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,220px">Future Minds<br>es una plataforma,<br>no un evento</x-import>
+      <p style="margin:0;max-width:680px;font-size:var(--fs-body-xl);font-weight:300;line-height:1.5;text-wrap:pretty">Conectamos a quienes toman decisiones con quienes están formando a la próxima generación. Empresas, instituciones, colegios, familias y jóvenes en la misma conversación.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="6">
+          <span style="padding:12px 24px;border:2px solid var(--fmm-carbon);border-radius:var(--radius-pill);font-family:var(--font-display);font-weight:700;letter-spacing:.12em;font-size:15px;text-transform:uppercase">{{ p }}</span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORRIDO -->
+  <section id="recorrido" data-screen-label="04 Recorrido" style="scroll-margin-top:80px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px) clamp(50px,6vw,75px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="100%,16px">El recorrido del ecosistema</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,160px">Cinco líneas,<br>un mismo ecosistema</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));border-top:2px solid var(--fmm-carbon)">
+        <sc-for list="{{ route }}" as="r" hint-placeholder-count="5">
+          <a href="{{ r.href }}" style="display:flex;flex-direction:column;gap:12px;padding:25px 20px 25px 0;color:var(--fmm-carbon);text-decoration:none" style-hover="opacity:.88">
+            <div style="display:flex;align-items:center;gap:10px;min-height:28px">
+              <span style="font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--fmm-rojo)">{{ r.n }}</span>
+              <sc-if value="{{ r.here }}" hint-placeholder-val="{{ false }}">
+                <span style="padding:4px 12px;border-radius:var(--radius-pill);background:var(--fmm-lima);font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase">Estás aquí</span>
+              </sc-if>
+              <sc-if value="{{ r.tag }}" hint-placeholder-val="{{ false }}">
+                <span style="padding:4px 12px;border-radius:var(--radius-pill);background:var(--fmm-turquesa);color:var(--fmm-blanco);font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase">{{ r.tag }}</span>
+              </sc-if>
+            </div>
+            <span style="font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted)">{{ r.when }}</span>
+            <span style="min-width:0;overflow-wrap:anywhere;font-family:var(--font-display);font-weight:700;font-size:clamp(18px,1.8vw,26px);line-height:1;text-transform:uppercase">{{ r.name }}</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PODCAST -->
+  <section id="podcast" data-screen-label="05 Podcast" style="scroll-margin-top:80px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(50px,6vw,75px) clamp(25px,4vw,50px) clamp(75px,9vw,150px);box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:40px;border-top:1px solid var(--fmm-gris)">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="260px,16px">02 · Future Minds Podcast</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="200px,16px">Publicación continua</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 75px;align-items:start">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,220px">Una conversación<br>al mes con quien<br>mueve España</x-import>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.65;text-wrap:pretty">El altavoz del ecosistema: líderes empresariales e institucionales en una pieza audiovisual que circula todo el año. Producido junto a Neozink, agencia productora de referencia nacional.</p>
+          <div style="background:var(--fmm-rojo);color:var(--fmm-blanco);padding:28px 30px;display:flex;flex-direction:column;gap:10px">
+            <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="140px,16px">Para tu marca</x-import>
+            <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,28px);line-height:1.1;text-transform:uppercase;text-wrap:pretty">Asocia tu marca a la conversación: contenido propio, no un logo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" data-screen-label="06 Impact" style="scroll-margin-top:80px;background:var(--fmm-turquesa);color:var(--fmm-blanco)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="260px,16px">03 · Future Minds Impact</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="120px,16px">Programas</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:50px 75px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:30px">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" color="lima" hint-size="100%,220px">La parte que<br>no se mide<br>en logotipos</x-import>
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.65;text-wrap:pretty">Educación, talento y emprendimiento en colegios, familias y jóvenes de toda España, con la ejecución real de Genyus School.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));border-top:2px solid var(--fmm-lima)">
+            <sc-for list="{{ impactPillars }}" as="c" hint-placeholder-count="3">
+              <div style="padding:20px 20px 0 0;display:flex;flex-direction:column;gap:6px">
+                <span style="font-family:var(--font-display);font-weight:700;font-size:20px;text-transform:uppercase;color:var(--fmm-lima)">{{ c.title }}</span>
+                <p style="margin:0;font-size:15px;line-height:1.5">{{ c.text }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+          <img src="assets/photography/web-9.jpg" alt="Jóvenes participan con micrófono en una actividad de Genyus School" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block">
+        </sc-if>
+      </div>
+      <div id="future-lab" style="scroll-margin-top:80px;background:var(--fmm-lima);color:var(--fmm-carbon);padding:clamp(30px,4vw,50px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:25px 75px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="240px,16px">Dentro de Impact · Verano 2027</x-import>
+          <h3 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(36px,4.6vw,64px);line-height:.92;text-transform:uppercase">Genyus<br>Future Lab</h3>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.6;text-wrap:pretty">Edición inaugural en verano de 2027. Impulsado junto a El Comercio como media partner, con el apoyo del Ayuntamiento de Gijón.</p>
+          <span style="font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase">Julio 2027 · Gijón</span>
+        </div>
+      </div>
+      <p style="margin:0;max-width:980px;font-family:var(--font-display);font-weight:700;font-size:clamp(26px,3.2vw,44px);line-height:1.05;text-transform:uppercase;color:var(--fmm-lima);text-wrap:pretty">Una RSC con resultado: contada y medida con datos, no con intenciones.</p>
+    </div>
+  </section>
+
+  <!-- PREMIOS -->
+  <section id="premios" data-screen-label="07 Premios" style="scroll-margin-top:80px;background:var(--fmm-lima)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" hint-size="260px,16px">04 · Premios Future Minds</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" hint-size="240px,16px">La gala del talento educativo</x-import>
+      </div>
+      <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+        <img src="assets/photography/premios-sala.jpg" alt="Centros educativos y familias en la gala de los Premios Future Minds" style="width:100%;aspect-ratio:21/9;object-fit:cover;display:block">
+      </sc-if>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 75px;align-items:start">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,220px">La noche en<br>la que la educación<br>se celebra</x-import>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.65;text-wrap:pretty">El reconocimiento a los centros educativos, docentes y proyectos que mejor impulsan el emprendimiento, la creatividad y el talento de los más jóvenes en Asturias. La noche en la que la educación asturiana se celebra.</p>
+          <div style="background:var(--fmm-blanco);padding:28px 30px;display:flex;flex-direction:column;gap:10px">
+            <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="140px,16px">Para tu marca</x-import>
+            <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,28px);line-height:1.1;text-transform:uppercase;text-wrap:pretty">Da nombre a una categoría y vincula tu marca al talento educativo y al impacto social: una RSC con rostro y resultado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEST -->
+  <section id="fest" data-screen-label="08 Fest" style="scroll-margin-top:80px;background:var(--fmm-naranja)">
+    <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+      <img src="assets/photography/fest-caps.jpg" alt="Más de mil niños y jóvenes en el Future Minds Fest 2025" style="width:100%;height:clamp(320px,52vw,680px);object-fit:cover;display:block">
+    </sc-if>
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" hint-size="260px,16px">05 · Future Minds Fest</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" hint-size="120px,16px">Junio 2027</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 75px;align-items:start">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,160px">La gran cita<br>del movimiento</x-import>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.65;text-wrap:pretty">Jornada completa, escenario, ponentes y un público que va más allá de lo empresarial. Acuerdos de colaboración abiertos desde octubre de 2026.</p>
+          <div style="background:var(--fmm-blanco);padding:28px 30px;display:flex;flex-direction:column;gap:10px">
+            <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="140px,16px">Para tu marca</x-import>
+            <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,28px);line-height:1.1;text-transform:uppercase;text-wrap:pretty">Las marcas que mejor funcionan en el Fest son las que llegan con tiempo.</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding:22px 0;border-top:2px solid var(--fmm-carbon);border-bottom:2px solid var(--fmm-carbon)">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Icon" name="hourglass-medium" size="{{ 34 }}" hint-size="34px,34px"></x-import>
+        <span style="font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2.2vw,28px);line-height:1.1;text-transform:uppercase">Número reducido de marcas. Reserva abierta desde octubre de 2026.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ TE APORTA -->
+  <section id="aporta" data-screen-label="09 Qué te aporta" style="scroll-margin-top:80px;background:var(--fmm-rojo);color:var(--fmm-blanco)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="100%,16px">Propuesta global</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" color="lima" hint-size="100%,160px">Qué te aporta<br>estar dentro</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));column-gap:75px;border-top:1px solid var(--fmm-blanco)">
+        <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="8">
+          <div style="display:flex;align-items:baseline;gap:25px;padding:22px 0;border-bottom:1px solid var(--fmm-blanco)">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--fmm-lima);min-width:32px">{{ b.n }}</span>
+            <span style="font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3.4vw,48px);line-height:1;text-transform:uppercase">{{ b.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAS DE ESTAR -->
+  <section id="estar" data-screen-label="10 Formas de estar" style="scroll-margin-top:80px;background:var(--fmm-gris)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="rojo" hint-size="100%,16px">Patrocinios y partners · Formas de estar</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" hint-size="100%,160px">Entra por un<br>evento, quédate<br>en el ecosistema</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:25px">
+        <sc-for list="{{ ways }}" as="w" hint-placeholder-count="3">
+          <div style="background:var(--fmm-blanco);border-radius:var(--radius-card);box-shadow:0 8px 24px rgba(44,46,53,.10);padding:35px 30px;display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+              <span style="font-family:var(--font-display);font-weight:700;font-size:88px;line-height:.85;color:var(--fmm-rojo)">{{ w.letter }}</span>
+              <sc-if value="{{ w.badge }}" hint-placeholder-val="{{ false }}">
+                <span style="padding:6px 14px;border-radius:var(--radius-pill);background:var(--fmm-rojo);color:var(--fmm-blanco);font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase">{{ w.badge }}</span>
+              </sc-if>
+            </div>
+            <span style="font-family:var(--font-display);font-weight:700;font-size:24px;text-transform:uppercase">{{ w.name }}</span>
+            <p style="margin:0;font-size:16px;line-height:1.55">{{ w.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:15px 50px;align-items:center">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:clamp(36px,4vw,56px);line-height:1;letter-spacing:.06em">A → B → C</span>
+        <p style="margin:0;font-size:var(--fs-body-lg);line-height:1.6;text-wrap:pretty">El AsturiasAfterWork es la puerta. El Future Minds Fest, los Premios y el ecosistema durante todo el año son el sitio donde las marcas que de verdad quieren liderar deciden estar.</p>
+      </div>
+      <div style="background:var(--fmm-carbon);color:var(--fmm-blanco);padding:clamp(30px,4vw,50px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:25px 50px;align-items:center">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3.2vw,44px);line-height:1;text-transform:uppercase;color:var(--fmm-lima)">¿Cuánto invierto para estar dentro?</h3>
+        <div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Cada acuerdo se cierra a medida según el alcance. Escríbenos a info@genyusschool.com y te enviamos el dossier con las modalidades.</p>
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Button" as="a" href="mailto:info@genyusschool.com?subject=Dossier%20Future%20Minds" variant="primary" hint-size="220px,46px">Pedir el dossier</x-import>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section id="contacto" data-screen-label="11 Contacto" style="scroll-margin-top:80px;position:relative;overflow:hidden;background:var(--fmm-rojo);color:var(--fmm-blanco)">
+    <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Watermark" color="lima" anchor="bottom-right" size="48%" rotate="20" style="right:-10%;bottom:-30%;max-width:700px" hint-size="0px,0px"></x-import>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(75px,9vw,150px) clamp(25px,4vw,50px);box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:50px 75px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:25px">
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Eyebrow" color="lima" hint-size="100%,16px">Siguiente paso</x-import>
+        <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.DisplayTitle" size="xl" color="lima" hint-size="100%,220px">Pocas marcas.<br>Bien colocadas.</x-import>
+        <p style="margin:0;max-width:540px;font-size:var(--fs-body-xl);font-weight:300;line-height:1.5;text-wrap:pretty">Cada acuerdo se cierra a medida. Una reunión de 30' basta para ver si hay encaje.</p>
+        <p style="margin:0;max-width:540px;font-size:17px;font-weight:500;line-height:1.55;text-wrap:pretty">Elegimos cuidar la experiencia antes que sumar marcas. Por eso cada año entran solo unas pocas. Si crees que encajáis, hablemos.</p>
+      </div>
+      <div style="background:var(--fmm-blanco);color:var(--fmm-carbon);border-radius:var(--radius-card);box-shadow:0 8px 24px rgba(44,46,53,.10);padding:35px;display:flex;flex-direction:column;gap:20px;max-width:480px">
+        <a href="mailto:info@genyusschool.com?subject=Dossier%20Future%20Minds" style="display:flex;gap:12px;align-items:center;min-height:44px;font-size:17px;word-break:break-all">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Icon" name="envelope-simple" size="{{ 26 }}" hint-size="26px,26px"></x-import>
+          <span>info@genyusschool.com · dossier</span>
+        </a>
+        <a href="mailto:pedro.carrillo@genyusschool.com" style="display:flex;gap:12px;align-items:center;min-height:44px;font-size:17px;word-break:break-all">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Icon" name="user" size="{{ 26 }}" hint-size="26px,26px"></x-import>
+          <span>pedro.carrillo@genyusschool.com</span>
+        </a>
+        <a href="https://wa.me/34649347471" target="_blank" rel="noopener" style="display:flex;gap:12px;align-items:center;min-height:44px;font-size:17px;color:var(--fmm-carbon);text-decoration:none">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Icon" name="whatsapp-logo" size="{{ 26 }}" hint-size="26px,26px"></x-import>
+          <span>WhatsApp 649 347 471</span>
+        </a>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:6px">
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Button" as="a" href="mailto:info@genyusschool.com?subject=Dossier%20Future%20Minds" variant="primary" hint-size="160px,46px">Escríbenos</x-import>
+          <x-import component-from-global-scope="MovimientoFutureMindsDesignSystem_d78a9e.Button" as="a" href="https://wa.me/34649347471" target="_blank" variant="secondary" hint-size="160px,46px">WhatsApp</x-import>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--fmm-blanco)">
+    <div style="max-width:1280px;margin:0 auto;padding:75px clamp(25px,4vw,50px) 50px;box-sizing:border-box;display:flex;flex-direction:column;gap:50px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:40px">
+        <img src="assets/logo-horizontal-carbon.png" alt="Movimiento Future Minds" style="height:64px;width:auto;display:block">
+        <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.6vw,36px);line-height:1.05;text-transform:uppercase;text-align:right">Redefiniendo reglas,<br>liberando potencial.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:15px 40px;padding-top:25px;border-top:1px solid var(--fmm-gris);font-size:14px;color:var(--text-muted)">
+        <span>Genyus School · Movimiento Future Minds</span>
+        <div style="display:flex;flex-wrap:wrap;gap:0 24px">
+          <a href="#privacidad" style="color:var(--text-muted);display:inline-flex;align-items:center;min-height:44px">Política de privacidad</a>
+          <a href="#aviso-legal" style="color:var(--text-muted);display:inline-flex;align-items:center;min-height:44px">Aviso legal</a>
+          <a href="#cookies" style="color:var(--text-muted);display:inline-flex;align-items:center;min-height:44px">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPhotos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;aawVideoUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://youtu.be/r-DIt6l6BEA&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;}}">
+class Component extends DCLogic {
+  state = { wide: true };
+  componentDidMount() {
+    this.onResize = () => this.setState({ wide: window.innerWidth >= 900 });
+    this.onResize();
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  videoId() {
+    const u = (this.props.aawVideoUrl ?? 'https://youtu.be/r-DIt6l6BEA').trim();
+    if (!u) return '';
+    const m = u.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
+    return m ? m[1] : (/^[\w-]{11}$/.test(u) ? u : '');
+  }
+  renderVals() {
+    const id = this.videoId();
+    return {
+      wide: this.state.wide,
+      showPhotos: this.props.showPhotos ?? true,
+      hasVideo: !!id,
+      noVideo: !id,
+      videoSrc: id ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&playsinline=1&rel=0&modestbranding=1&controls=1` : '',
+      pillars: ['Liderazgo', 'Empresa', 'Talento', 'Educación', 'Emprendimiento', 'Impacto'],
+      awProof: [
+        { value: '+200', label: 'Empresas y directivos' },
+        { value: '8', label: 'Años' },
+        { value: 'Sold out', label: 'Edición 2025' },
+        { value: '1er nivel', label: 'Presencia institucional' }
+      ],
+      awTiers: [
+        { seats: 'Main · 1 plaza (cubierta)', name: 'Main Partner', text: 'La marca que lidera el encuentro.', sold: true, open: false },
+        { seats: 'Premium · máx. 3', name: 'Premium Partner', text: 'Cerca de quien decide, antes y después.', sold: false, open: true },
+        { seats: 'Partner · máx. 5', name: 'Partner', text: 'Entras en la comunidad empresarial asturiana.', sold: false, open: true }
+      ],
+      route: [
+        { n: '01', when: 'Diciembre 2026', name: 'AsturiasAfterWork', here: true, href: '#afterwork' },
+        { n: '02', when: 'Publicación continua', name: 'Future Minds Podcast', here: false, href: '#podcast' },
+        { n: '03', when: 'Programas', name: 'Future Minds Impact', here: false, href: '#impact' },
+        { n: '04', when: 'Gala anual', name: 'Premios Future Minds', here: false, href: '#premios' },
+        { n: '05', when: 'Junio 2027', name: 'Future Minds Fest', here: false, href: '#fest' },
+        { n: '03', tag: 'Dentro de Impact', when: 'Julio 2027', name: 'Genyus Future Lab', here: false, href: '#future-lab' }
+      ],
+      impactPillars: [
+        { title: 'Educación', text: 'Programas en colegios y con familias.' },
+        { title: 'Talento', text: 'Puentes entre jóvenes y empresas.' },
+        { title: 'Emprendimiento', text: 'Retos y mentoría en el aula.' }
+      ],
+      benefits: ['Impacto social', 'Reputación y repercusión', 'Contenidos', 'Relaciones', 'Employer branding', 'Talento', 'Innovación', 'Posicionamiento'].map((label, i) => ({ n: String(i + 1).padStart(2, '0'), label })),
+      ways: [
+        { letter: 'A', badge: '', name: 'Patrocinio de evento', text: 'Presencia en AsturiasAfterWork 2026 o en el Future Minds Fest 2027. Una cita, un presupuesto cerrado, resultados medibles.' },
+        { letter: 'B', badge: '', name: 'Partner Future Minds', text: 'Asociación al ecosistema todo el año: eventos, podcast, contenidos y proyectos de impacto educativo.' },
+        { letter: 'C', badge: 'Solo 2 marcas al año', name: 'Strategic Partner', text: 'Dos marcas al año. Relación profunda, co-construcción de contenidos e iniciativas y voz propia en el movimiento.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

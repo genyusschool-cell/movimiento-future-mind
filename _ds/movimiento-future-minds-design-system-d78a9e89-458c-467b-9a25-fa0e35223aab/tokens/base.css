@@ -1,0 +1,11 @@
+/* Base mínima: sólo lo que evita que un consumidor arranque con estilos del navegador. */
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);font-size:var(--fs-body-md);font-weight:var(--weight-regular);line-height:var(--lh-body);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:var(--weight-display);text-transform:uppercase;line-height:var(--lh-display);letter-spacing:var(--ls-display);color:var(--text-heading);margin:0}
+h1{font-size:var(--fs-display-xl)}h2{font-size:var(--fs-display-lg)}h3{font-size:var(--fs-display-md)}h4{font-size:var(--fs-display-sm)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--text-link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;transition:color var(--dur-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--fmm-carbon);outline-offset:2px}
+img{max-width:100%;display:block}
+::selection{background:var(--fmm-lima);color:var(--fmm-carbon)}

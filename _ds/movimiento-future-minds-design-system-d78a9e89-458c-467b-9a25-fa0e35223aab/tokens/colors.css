@@ -1,0 +1,51 @@
+/* Colores — Manual de marca §2.4 (p.29). Paleta cerrada: no se añaden colores
+   fuera de esta página. No se usa negro como fondo. */
+:root{
+  /* ── Primarios (valores exactos del manual) ───────────────────────── */
+  --fmm-rojo:#E94B4D;        /* CMYK 0,82,64,0   · RGB 233,74,76    */
+  --fmm-lima:#DCDD3C;        /* CMYK 21,0,85,0   · RGB 220,221,60   */
+  --fmm-naranja:#F9B44B;     /* CMYK 0,35,77,0   · RGB 249,180,75   */
+  --fmm-turquesa:#27B4AF;    /* CMYK 72,0,37,0   · RGB 39,180,175   */
+  --fmm-verde:#C3D66D;       /* CMYK 31,0,69,0   · RGB 195,214,109  */
+  --fmm-gris:#E0E0E0;        /* CMYK 14,10,11,0  · RGB 224,224,224  */
+
+  /* ── Tinta / soporte ──────────────────────────────────────────────── */
+  --fmm-carbon:#2C2E35;      /* color del isotipo y del logotipo, muestreado del manual */
+  --fmm-blanco:#FFFFFF;
+
+  /* ── Alias semánticos ─────────────────────────────────────────────── */
+  --color-brand:var(--fmm-rojo);
+  --color-brand-alt:var(--fmm-lima);
+
+  --text-heading:var(--fmm-carbon);
+  --text-body:var(--fmm-carbon);
+  --text-muted:#6B6E78;          /* carbón al 65% sobre blanco, opaco */
+  --text-on-color:var(--fmm-blanco);
+  --text-on-color-alt:var(--fmm-lima);
+  --text-inverse:var(--fmm-blanco);
+  --text-link:var(--fmm-rojo);
+  --text-link-hover:#C93C3E;     /* rojo oscurecido ~10% */
+
+  --surface-page:var(--fmm-blanco);
+  --surface-muted:var(--fmm-gris);
+  --surface-card:var(--fmm-blanco);
+  --surface-band-1:var(--fmm-rojo);
+  --surface-band-2:var(--fmm-lima);
+  --surface-band-3:var(--fmm-turquesa);
+  --surface-band-4:var(--fmm-naranja);
+  --surface-band-5:var(--fmm-verde);
+
+  --border-subtle:var(--fmm-gris);
+  --border-strong:var(--fmm-carbon);
+
+  /* ── Parejas de contraste aprobadas (fondo → tinta) ───────────────── */
+  --pair-rojo-ink:var(--fmm-lima);
+  --pair-lima-ink:var(--fmm-carbon);
+  --pair-naranja-ink:var(--fmm-carbon);
+  --pair-turquesa-ink:var(--fmm-lima);
+  --pair-verde-ink:var(--fmm-carbon);
+  --pair-gris-ink:var(--fmm-carbon);
+
+  /* ── Grafismo: isotipo gigante de fondo ───────────────────────────── */
+  --graphic-watermark-opacity:1; /* @kind other */  /* el isotipo va a color pleno, nunca en opacidad baja */
+}

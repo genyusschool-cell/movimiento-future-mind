@@ -1,0 +1,24 @@
+/* Sombras y efectos. El manual es plano: color pleno contra color pleno.
+   La sombra sólo aparece para separar una tarjeta blanca de una banda de color
+   y es siempre suave y neutra — nunca de color, nunca dura. */
+:root{
+  --shadow-none:none; /* @kind shadow */
+  --shadow-card:0 8px 24px rgba(44,46,53,.10);
+  --shadow-card-hover:0 14px 34px rgba(44,46,53,.16);
+  --shadow-raised:0 2px 6px rgba(44,46,53,.08);
+
+  /* Borde: línea fina de gris de marca, o carbón para el trazo fuerte */
+  --border-width:1px;
+  --border-width-strong:2px;
+  --border-subtle-line:1px solid var(--fmm-gris); /* @kind other */
+  --border-strong-line:2px solid var(--fmm-carbon); /* @kind other */
+
+  /* Opacidades de interacción */
+  --opacity-hover:.88; /* @kind other */
+  --opacity-disabled:.40; /* @kind other */
+
+  /* Sin blur ni cristal: el manual no usa transparencia ni desenfoque.
+     La única transparencia admitida es el bloque de color sobre foto. */
+  --overlay-color-on-photo:.72; /* @kind other */   /* bloque de color plano encima de la foto */
+  --photo-duotone-mix:.55; /* @kind other */        /* mezcla del color de marca con la foto */
+}

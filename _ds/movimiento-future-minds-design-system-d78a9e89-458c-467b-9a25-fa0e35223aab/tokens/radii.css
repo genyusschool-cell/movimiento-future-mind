@@ -1,0 +1,12 @@
+/* Radios. El sistema es fundamentalmente de canto vivo: bandas de color,
+   bloques de texto y recortes fotográficos van a 0. El redondeo se reserva
+   a tarjetas sobre banda y a botones (p.38, mock de web). */
+:root{
+  --radius-none:0;
+  --radius-block:0;
+  --radius-sm:4px;
+  --radius-card:12px;
+  --radius-lg:20px;
+  --radius-pill:999px;
+  --radius-avatar:999px;
+}
