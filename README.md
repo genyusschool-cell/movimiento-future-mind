@@ -3,7 +3,9 @@ branch: main
 
 ## Despliegue
 Sitio estático, sin build. Vercel sirve `index.html` en la raíz.
-Contenido: index.html (Future Minds Web), support.js, _ds/, assets/.
+Contenido: index.html (Future Minds Web), support.js, _ds/, assets/, asturias-afterwork/, vercel.json.
+URLs: / (home MFM) · /asturias-afterwork (landing AAW) · /asturias-afterwork/privacidad.
+vercel.json: cleanUrls + trailingSlash false. La landing AAW usa rutas absolutas (/asturias-afterwork/...) para funcionar sin barra final.
 
 ## Last sync
 date: 2026-10-08
