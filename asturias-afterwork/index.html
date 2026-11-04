@@ -162,13 +162,13 @@ a:hover{color:#3a2aa8}
       </div>
     </sc-if>
     <sc-if value="{{ hasPartners }}" hint-placeholder-val="{{ false }}">
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr)); gap:12px;">
-        <sc-for list="{{ partners }}" as="p" hint-placeholder-count="0">
-          <div style="background:#ffffff; border-radius:22px; padding:18px 20px; display:flex; flex-direction:column; gap:10px;">
-            <span style="font-size:10px; letter-spacing:0.16em; text-transform:uppercase; font-weight:800; color:#6a6399;">Partner</span>
-            <div role="img" aria-label="{{ p.name }}" style="height:36px; width:100%; background:center / contain no-repeat; background-image:{{ p.bg }};"></div>
-          </div>
-        </sc-for>
+      <div style="background:#ffffff; border-radius:28px; padding:24px 28px; display:flex; flex-direction:column; gap:16px;">
+        <span style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; font-weight:800; color:#6a6399;">Partner</span>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr)); gap:20px 40px; align-items:center;">
+          <sc-for list="{{ partners }}" as="p" hint-placeholder-count="0">
+            <div role="img" aria-label="{{ p.name }}" style="height:48px; width:100%; background:center / contain no-repeat; background-image:{{ p.bg }};"></div>
+          </sc-for>
+        </div>
       </div>
     </sc-if>
   </div>
@@ -459,7 +459,7 @@ a:hover{color:#3a2aa8}
         </div>
       </div>
       <div style="background:#ffffff; color:#1d1068; border-radius:40px; padding:36px; display:flex; flex-direction:column; gap:14px;">
-        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px;"><span style="background:#1d1068; color:#ffffff; border-radius:800px; padding:4px 12px; font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;">Máximo 5 plazas</span><span style="font-size:14px; font-weight:800; color:#e94b4c;">4 plazas disponibles</span></div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px;"><span style="background:#1d1068; color:#ffffff; border-radius:800px; padding:4px 12px; font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;">Máximo 5 plazas</span><span style="font-size:14px; font-weight:800; color:#e94b4c;">2 plazas disponibles</span></div>
         <span style="font-size:22px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase;">Partner</span>
         <span style="font-size:16px; color:#433a7d;">Entras en la comunidad empresarial asturiana.</span>
         <a href="{{ tiers.t2.mail }}" style="align-self:flex-start; margin-top:8px; font-size:16px; font-weight:700; color:#1d1068;">Solicita las condiciones</a>
@@ -564,7 +564,7 @@ const FAQS = [
 ];
 // Añadir logos: { name: 'Marca', logo: '/asturias-afterwork/assets/marca.svg' }. Unicaja (Main Partner) siempre va primero y más grande.
 const PREMIUM_LOGOS = [];
-const PARTNER_LOGOS = [{ name: 'Learning Experience', logo: '/asturias-afterwork/assets/learning-experience.svg' }];
+const PARTNER_LOGOS = [{ name: 'Learning Experience', logo: '/asturias-afterwork/assets/learning-experience.svg' }, { name: 'Solis Industrias del Caucho', logo: '/asturias-afterwork/assets/solis.jpg' }, { name: 'Movimiento Future Minds', logo: '/asturias-afterwork/assets/partner-future-minds.png' }];
 const WA = 'https://wa.me/34649347471?text=';
 const TIERS = [
   { name: 'Main Partner', items: ['Naming del evento: «AsturiasAfterWork 2026, con [tu marca]»', 'Creatividad propia y presencia destacada en la landing de inscripción', "Escenario: 2' de intervención + foto en escenario", 'Logo en el photocall (panel de fotos del evento)', 'Activación de marca exclusiva: ubicación propia y preferente (stand)', 'Mención especial durante el evento', 'Contenido audiovisual y fotografías profesionales para tus canales', 'Máxima presencia de marca en comunicación, web, RRSS, photocall y materiales', 'Acceso a la BBDD de inscritos (conforme a la normativa de protección de datos)', 'Posibilidad de sorteo de un regalo entre los asistentes', '4 entradas VIP + 8 entradas standard', 'Presencia en la comunicación previa, durante y posterior', 'Bolsa de bienvenida AAW: logo + 2 objetos de marca'] },
