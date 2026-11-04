@@ -166,7 +166,7 @@ a:hover{color:#3a2aa8}
         <span style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; font-weight:800; color:#6a6399;">Partner</span>
         <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr)); gap:20px 40px; align-items:center;">
           <sc-for list="{{ partners }}" as="p" hint-placeholder-count="0">
-            <div role="img" aria-label="{{ p.name }}" style="height:48px; width:100%; background:center / contain no-repeat; background-image:{{ p.bg }};"></div>
+            <div role="img" aria-label="{{ p.name }}" style="height:80px; width:100%; max-width:200px; justify-self:center; background:center / contain no-repeat; background-image:{{ p.bg }};"></div>
           </sc-for>
         </div>
       </div>
@@ -564,7 +564,7 @@ const FAQS = [
 ];
 // Añadir logos: { name: 'Marca', logo: '/asturias-afterwork/assets/marca.svg' }. Unicaja (Main Partner) siempre va primero y más grande.
 const PREMIUM_LOGOS = [];
-const PARTNER_LOGOS = [{ name: 'Learning Experience', logo: '/asturias-afterwork/assets/learning-experience.svg' }, { name: 'Solis Industrias del Caucho', logo: '/asturias-afterwork/assets/solis.jpg' }, { name: 'Movimiento Future Minds', logo: '/asturias-afterwork/assets/partner-future-minds.png' }];
+const PARTNER_LOGOS = [{ name: 'Learning Experience', logo: '/asturias-afterwork/assets/learning-experience.svg' }, { name: 'Solis Industrias del Caucho', logo: '/asturias-afterwork/assets/solis-crop.png' }, { name: 'Movimiento Future Minds', logo: '/asturias-afterwork/assets/partner-future-minds.png' }];
 const WA = 'https://wa.me/34649347471?text=';
 const TIERS = [
   { name: 'Main Partner', items: ['Naming del evento: «AsturiasAfterWork 2026, con [tu marca]»', 'Creatividad propia y presencia destacada en la landing de inscripción', "Escenario: 2' de intervención + foto en escenario", 'Logo en el photocall (panel de fotos del evento)', 'Activación de marca exclusiva: ubicación propia y preferente (stand)', 'Mención especial durante el evento', 'Contenido audiovisual y fotografías profesionales para tus canales', 'Máxima presencia de marca en comunicación, web, RRSS, photocall y materiales', 'Acceso a la BBDD de inscritos (conforme a la normativa de protección de datos)', 'Posibilidad de sorteo de un regalo entre los asistentes', '4 entradas VIP + 8 entradas standard', 'Presencia en la comunicación previa, durante y posterior', 'Bolsa de bienvenida AAW: logo + 2 objetos de marca'] },
